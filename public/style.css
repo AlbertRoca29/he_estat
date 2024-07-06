@@ -1,0 +1,90 @@
+/* Reset some basic elements */
+body, h1, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header styling */
+h1 {
+    margin-top: 20px;
+    color: #004085;
+    font-size: 2em;
+}
+
+/* Input form styling */
+#country-input {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#countryName {
+    width: 250px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Map container styling */
+#map {
+    width: 80%;
+    height: 600px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #004085;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
+
+/* Enhancing the visited country style */
+.visited-country {
+    fill: #28a745 !important; /* Green color for visited countries */
+    stroke: #ffffff; /* White border for better visibility */
+    stroke-width: 1;
+}
+
+/* Adding a subtle shadow effect to the map */
+#map {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
